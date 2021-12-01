@@ -8,14 +8,21 @@ where the raw fastq.gz files from SRA are placed in the "fastqs" directory. Then
 
 
  """
+ 
  pwd
+ 
  sed 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' AGAVE_CayoTrim_config.json > CayoTrim_config.json
+
  """
 
 Lastly, create (assuming you have mamba installed) and activate the conda env and conduct a dry run of the pipeline:
+
+"""
 
  mamba env create --name Cayo -f Cayo_environment.yml
 
  conda activate Cayo
 
  snakemake --use-conda -np -s Snakefile_CayoTrim.py
+
+ """
