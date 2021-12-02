@@ -6,7 +6,7 @@ To run this pipeline on any machine running linux, run
 
 """
 
-git clone https://github.com/DrPintoThe2nd/Cayo_X.git
+<git clone https://github.com/DrPintoThe2nd/Cayo_X.git>
 
 """
 
