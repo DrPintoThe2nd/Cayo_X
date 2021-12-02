@@ -15,7 +15,7 @@ where the raw fastq.gz files from SRA are placed in the "fastqs" directory. Then
 
  """
 
-Lastly, create (assuming you have mamba installed) and activate the conda env and conduct a dry run of the pipeline:
+Lastly, create (assuming you have mamba installed) and activate the conda env and conduct a dry run of the pipeline (full pipeline assumes 4 cores):
 
 """
 
@@ -27,7 +27,7 @@ Lastly, create (assuming you have mamba installed) and activate the conda env an
 
  """
 
- To prepare the reference genome for mapping, use these commands to download and index the Y-masked genome assembly:
+ To prepare the reference genome for mapping, use these commands to download and index the Y-masked genome assembly (assumes 4 available cores):
  
  """
  
