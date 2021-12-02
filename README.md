@@ -39,7 +39,7 @@ Lastly, create (assuming you have mamba installed) and activate the conda env an
  
  conda activate xyalign
  
- bash xyalign.sh Macaca_mulatta.Mmul_10.dna.toplevel.fa
+ bash xyalign_index.sh Macaca_mulatta.Mmul_10.dna.toplevel.fa
  
  """
  
