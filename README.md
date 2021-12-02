@@ -60,7 +60,15 @@ To prepare the reference genome for mapping, use these commands to download and 
 
 """
  
+To map reads and call SNPs using this new genome, we'll use snakemake again within our original Cayo conda env:
+
+(5)
  
+"""
  
+conda activate Cayo
  
+
+ 
+"""
  
