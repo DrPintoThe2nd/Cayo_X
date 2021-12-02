@@ -4,7 +4,7 @@ To run this pipeline on any machine running linux, run
 
 (1)
 
-'''bash
+'''
 
 git clone https://github.com/DrPintoThe2nd/Cayo_X.git
 
