@@ -4,11 +4,11 @@ To run this pipeline on any machine running linux, run
 
 (1)
 
-"""
+'''bash
 
-<git clone https://github.com/DrPintoThe2nd/Cayo_X.git>
+git clone https://github.com/DrPintoThe2nd/Cayo_X.git
 
-"""
+'''
 
 where the raw fastq.gz files from SRA are placed in the "fastqs" directory. 
 
