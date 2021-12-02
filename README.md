@@ -26,3 +26,24 @@ Lastly, create (assuming you have mamba installed) and activate the conda env an
  snakemake --use-conda -np -s Snakefile_CayoTrim.py
 
  """
+
+ To prepare the reference genome for mapping, use these commands to download and index the Y-masked genome assembly:
+ 
+ """
+ 
+ wget ftp://ftp.ensembl.org/pub/release-104/fasta/macaca_mulatta/dna/Macaca_mulatta.Mmul_10.dna.toplevel.fa.gz
+ 
+ pigz -d Macaca_mulatta.Mmul_10.dna.toplevel.fa.gz
+
+ mamba env create --name xyalign -f xyalign_environment.yml
+ 
+ conda activate xyalign
+ 
+ bash xyalign.sh Macaca_mulatta.Mmul_10.dna.toplevel.fa
+ 
+ """
+ 
+ 
+ 
+ 
+ 
