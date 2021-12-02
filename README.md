@@ -12,7 +12,7 @@ git clone https://github.com/DrPintoThe2nd/Cayo_X.git
 
 where the raw fastq.gz files from SRA are placed in the "fastqs" directory. 
 
-Then, edit this line of code to include the path to your current directory with the above directories nested within as <path-to-working-directory>, note that forward slashed are needed to induce literal interpretations of backslashes in the path:
+Then, edit this line of code to include the path to your current directory with the above directories nested within as <path-to-working-directory>, note that forward slashes are needed to induce literal interpretations of backslashes in the path:
 
 (2)
  
