@@ -2,7 +2,7 @@
 
 To run this pipeline on any machine running linux, run 
 
-(1)
+(Step 1)
 
 ```
 
@@ -14,7 +14,7 @@ where the raw fastq.gz files from SRA are placed in the "fastqs" directory.
 
 Then, edit this line of code to include the path to your current directory with the above directories nested within as <path-to-working-directory>, note that forward slashes are needed to induce literal interpretations of backslashes in the path:
 
-(2)
+(Step 2)
  
 ```
  
@@ -26,7 +26,7 @@ sed 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g
 
 Then, create (assuming you have mamba installed) and activate the conda env and conduct a dry run of the pipeline (full pipeline assumes 4 cores):
 
-(3)
+(Step 3)
 
 ```
 
@@ -42,7 +42,7 @@ Then, create (assuming you have mamba installed) and activate the conda env and 
 
 To prepare the reference genome for mapping, use these commands to download and index the Y-masked genome assembly (assumes 4 available cores). Of note, xyalign and snakemake are incompatible packages, hence swapping conda environments and escaping the snakemake pipeline. Importantly, this step also generates a folder and subfolders within a directory called "Mmul10" which is called for in later steps.
  
-(4)
+(Step 4)
  
 ```
  
@@ -62,7 +62,7 @@ To prepare the reference genome for mapping, use these commands to download and 
  
 To map reads and call SNPs using this new genome, we'll use snakemake again within our original Cayo conda env:
 
-(5)
+(Step 5)
  
 ```
  
