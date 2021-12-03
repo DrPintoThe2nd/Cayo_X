@@ -40,7 +40,7 @@ Then, create (assuming you have mamba installed) and activate the conda env and 
  
 ```
 
-To prepare the reference genome for mapping, use these commands to download and index the Y-masked genome assembly (assumes 4 available cores). Of note, xyalign and snakemake are incompatible packages, hence swapping conda environments and escaping the snakemake pipeline. Importantly, this step also generates a folder and subfolders within a directory called "Mmul10" which is called for in later steps.
+To prepare the reference genome for mapping, use these commands to download and index the Y-masked genome assembly (assumes 4 available cores and pigz installed). Of note, xyalign and snakemake are incompatible packages, hence swapping conda environments and escaping the snakemake pipeline. Importantly, this step also generates a folder and subfolders within a directory called "Mmul10" which is called for in later steps.
  
 (Step 4)
  
