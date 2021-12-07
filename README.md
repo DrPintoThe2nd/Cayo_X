@@ -68,7 +68,10 @@ To map reads and call SNPs using this new genome, we'll use snakemake again with
  
 conda activate Cayo
  
-
+snakemake --use-conda -np -s Snakefile_SNPs.2.py
+#currently only maps reads
+ 
+conda deactivate
  
 ```
  
