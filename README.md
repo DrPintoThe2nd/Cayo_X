@@ -20,7 +20,7 @@ Then, edit this line of code to include the path to your current directory with 
  
 pwd #get current path for next step
  
-sed 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' AGAVE_CayoTrim_config.json > CayoTrim_config.json
+sed 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' AGAVE_config.json > Cayo_config.json
 
 ```
 
