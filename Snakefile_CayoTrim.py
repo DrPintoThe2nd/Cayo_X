@@ -1,6 +1,6 @@
 import os
 
-configfile: "CayoTrim_config.json"
+configfile: "Cayo_config.json"
 
 sample = config["samples_ALL"]
 raw_reads = config["raw_reads"]
