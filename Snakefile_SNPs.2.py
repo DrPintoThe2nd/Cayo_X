@@ -1,5 +1,5 @@
 import os
-configfile: "AGAVE_config.json"
+configfile: "Cayo_config.json"
 dna_samples = config["dna"]
 rna_samples = config["rna"]
 genomes_to_use = config["Mmul10_XX"]
