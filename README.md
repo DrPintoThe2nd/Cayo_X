@@ -54,7 +54,7 @@ To prepare the reference genome for mapping, use these commands to download and 
  
  conda activate xyalign
  
- bash xyalign_index.sh Macaca_mulatta.Mmul_10.dna.toplevel.fa
+ bash xyalign_index_rename.sh Macaca_mulatta.Mmul_10.dna.toplevel.fa
  
  conda deactivate
 
