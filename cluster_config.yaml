@@ -1,0 +1,63 @@
+__default__:
+  mem_mb: 1000
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:05:00
+  nodes: 1
+  threads: 1
+hisat2_map_reads:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:25:00
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
+bwa_map_reads:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:45:00
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
+gatk_gvcf_chrx:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:15:00
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
+gatk_combinegvcfs_chrx:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:10:00
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
+gatk_genotypegvcf_chrx:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:05:00
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
+gatk_gvcf_autosomes:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:17:30
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
+gatk_combinegvcfs_autosomes:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:10:00
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
+gatk_genotypegvcf_autosomes:
+  queue: 'normal'
+  partition: 'htc'
+  time: 00:06:00
+  nodes: 1
+  threads: 4
+  mem_mb: 4000
