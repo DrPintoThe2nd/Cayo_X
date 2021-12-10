@@ -34,7 +34,7 @@ Then, create (assuming you have mamba installed) and activate the conda env and 
 
  conda activate Cayo
 
- snakemake --use-conda -np -s Snakefile_CayoTrim.py
+ snakemake --use-conda -np -s Snakefile_CayoTrim.py #dry-run
 
  conda deactivate 
  
@@ -68,8 +68,7 @@ To map reads and call SNPs using this new genome, we'll use snakemake again with
  
 conda activate Cayo
  
-snakemake --use-conda -np -s Snakefile_SNPs.2.py
-#currently only maps reads
+snakemake --use-conda -np -s Snakefile_SNPs.py #dry-run
  
 conda deactivate
  
