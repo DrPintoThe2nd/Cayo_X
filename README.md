@@ -82,7 +82,7 @@ To run GATK's ASEReadcounter, then rename the output into directly interpretable
  
 conda activate Cayo
  
-snakemake --use-conda -np -s Snakefile_SNPs.py #dry-run
+snakemake --use-conda -np -s Snakefile_asereadcounter.py #dry-run
  
 bash asereadcounter/rename_asereadcounter.sh
  
