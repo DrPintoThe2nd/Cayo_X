@@ -74,3 +74,23 @@ conda deactivate
  
 ```
  
+To run GATK's ASEReadcounter, then rename the output into directly interpretable outputs:
+ 
+(Step 6)
+ 
+ ```
+ 
+conda activate Cayo
+ 
+snakemake --use-conda -np -s Snakefile_SNPs.py #dry-run
+ 
+bash rename_asereadcounter.sh
+ 
+conda deactivate
+ 
+ ```
+ 
+ 
+ 
+ 
+ 
