@@ -34,7 +34,7 @@ Then, create (assuming you have mamba installed) and activate the conda env and 
 
  conda activate Cayo
 
- snakemake --use-conda -np -s Snakefile_CayoTrim.py #dry-run
+ snakemake --use-conda -np -s Snakefile_CayoTrim.py #dry-run, see 'Snakemake_CayoTrim.sbatch' for example script for your machine
 
  conda deactivate 
  
@@ -68,7 +68,7 @@ To map reads and call SNPs using this new genome, we'll use snakemake again with
  
 conda activate Cayo
  
-snakemake --use-conda -np -s Snakefile_SNPs.py #dry-run
+snakemake --use-conda -np -s Snakefile_SNPs.py #dry-run, see 'Snakemake_SNPs.sbatch' for example script for your machine
  
 conda deactivate
  
@@ -82,7 +82,7 @@ To run GATK's ASEReadcounter, then rename the output into directly interpretable
  
 conda activate Cayo
  
-snakemake --use-conda -np -s Snakefile_asereadcounter.py #dry-run
+snakemake --use-conda -np -s Snakefile_asereadcounter.py #dry-run, see 'Snakemake_asereadcounter.sbatch' for example script for your machine
  
 bash asereadcounter/rename_asereadcounter.sh
 
