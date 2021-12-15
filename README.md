@@ -85,6 +85,8 @@ conda activate Cayo
 snakemake --use-conda -np -s Snakefile_asereadcounter.py #dry-run
  
 bash asereadcounter/rename_asereadcounter.sh
+
+bash asereadcounter/run_compute_mean_median_ratio_all_chr_macaques.sh
  
 conda deactivate
  
