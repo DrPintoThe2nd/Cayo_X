@@ -20,4 +20,4 @@ source activate Cayo
 
 snakemake --use-conda -np -s Snakefile_SNPs.py --unlock;
 
-snakemake --use-conda -j 400 --rerun-incomplete --latency-wait 60 -s Snakefile_asereadcounter.py --cluster "sbatch -q normal -p htc -t 0-00:45:00 -N 1 -n 1 -o logs/slurm.snakemake.%j.out"
+snakemake --use-conda -j 600 --rerun-incomplete --latency-wait 60 -s Snakefile_asereadcounter.py --cluster "sbatch -q normal -p htc -t 0-00:45:00 -N 1 -n 1 -o logs/slurm.snakemake.%j.out"
