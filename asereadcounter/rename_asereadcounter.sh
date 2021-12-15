@@ -1,7 +1,7 @@
 #!/bin/bash
 # For convenience, rename rna id to tissue name
 
-cd /data/CEM/wilsonlab/lab_generated/cayo/asereadcounter/
+cd asereadcounter/
 # ----
 # chrX
 # ----
