@@ -84,7 +84,7 @@ conda activate Cayo
  
 snakemake --use-conda -np -s Snakefile_SNPs.py #dry-run
  
-bash rename_asereadcounter.sh
+bash asereadcounter/rename_asereadcounter.sh
  
 conda deactivate
  
