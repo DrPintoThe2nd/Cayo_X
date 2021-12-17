@@ -10,7 +10,7 @@ pigz -d Macaca_mulatta.Mmul_10.105.gff3.gz;
 
 echo "converting to bed file using bedops."
 gff2bed < Macaca_mulatta.Mmul_10.105.gff3 | grep 'mRNA' > Macaca_mulatta.Mmul_10.105.transcripts.bed;
-bedextract --list-chr Macaca_mulatta.Mmul_10.105.bed > chr.txt;
+bedextract --list-chr Macaca_mulatta.Mmul_10.105.transcripts.bed > chr.txt;
 
 echo "extracting bed file per chromosome..."
 mkdir per_chr_beds
