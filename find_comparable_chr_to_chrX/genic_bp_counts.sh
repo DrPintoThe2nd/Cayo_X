@@ -1,7 +1,7 @@
 #!bin/bash
 
 echo "ensuring conda environment is active."
-conda activate Cayo
+source activate Cayo
 
 echo "downloading gff file."
 wget http://ftp.ensembl.org/pub/release-105/gff3/macaca_mulatta/Macaca_mulatta.Mmul_10.105.gff3.gz;
