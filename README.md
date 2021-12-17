@@ -86,6 +86,9 @@ snakemake --use-conda -np -s Snakefile_asereadcounter.py #dry-run, see 'Snakemak
  
 bash asereadcounter/rename_asereadcounter.sh
 
+snakemake --use-conda -np -s Snakefile_skewed_variants.py
+
+
 #edit this path in-line for your machine
 sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/compute_mean_median_ratio_all_chr_macaques.R
  
