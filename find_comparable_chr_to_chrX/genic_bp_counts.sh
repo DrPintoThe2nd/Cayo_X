@@ -16,7 +16,7 @@ echo "extracting bed file per chromosome..."
 mkdir per_chr_beds
 cat chr.txt | while read line
 do
-bedextract $line Macaca_mulatta.Mmul_10.105.bed > per_chr_beds/chr$line\_transcripts.bed
+bedextract $line Macaca_mulatta.Mmul_10.105.transcripts.bed > per_chr_beds/chr$line\_transcripts.bed
 done
 
 echo "extracting bp counts per chromosome..."
