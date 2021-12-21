@@ -86,7 +86,7 @@ snakemake --use-conda -np -s Snakefile_asereadcounter.py #dry-run, see 'Snakemak
  
 bash asereadcounter/rename_asereadcounter.sh
 
-snakemake --use-conda -np -s Snakefile_skewed_variants.py
+snakemake --use-conda -np -s Snakefile_skewed_variants.py #dry-run, see 'Snakemake_skewed_variants.sbatch' for example script for your machine
 
 
 #edit this path in-line for your machine
