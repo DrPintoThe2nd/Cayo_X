@@ -102,13 +102,13 @@ conda deactivate
  Plotting mean-median ratios across autosomes and teh X chromosome.
  
  ```
- sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/plot_violin_plot_allindividuals_alltissues_autosomes.R
- sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX.R
- sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX_compared_autosomes.R
+ sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/plot_violin_plot_allindividuals_alltissues_autosomes.R;
+ sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX.R;
+ sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX_compared_autosomes.R;
  
- Rscript asereadcounter/plot_violin_plot_allindividuals_alltissues_autosomes.R
- Rscript asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX.R
- Rscript asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX_compared_autosomes.R
+ Rscript asereadcounter/plot_violin_plot_allindividuals_alltissues_autosomes.R;
+ Rscript asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX.R;
+ Rscript asereadcounter/plot_violin_plot_allindividuals_alltissues_chrX_compared_autosomes.R;
  
  ```
  
