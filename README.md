@@ -99,7 +99,7 @@ conda deactivate
  ```
  
  (Step 7)
- Plotting mean-median ratios across autosomes and teh X chromosome.
+ Plotting mean-median ratios across autosomes and the X chromosome.
  
  ```
  sed -i 's/\/data\/CEM\/wilsonlab\/lab_generated\/cayo/<path-to-working-directory>/g' asereadcounter/plot_violin_plot_allindividuals_alltissues_autosomes.R;
