@@ -1,4 +1,4 @@
-# Cayo_X
+# Cayo Macaque XCI and GTEx XCI
 
 To run this pipeline on any machine running linux, run 
 
