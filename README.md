@@ -113,6 +113,7 @@ conda deactivate
  ```
  
  (Step 8)
+ Replicate analysis in humans using GTEx data (controlled access data).
  
  ```
  
