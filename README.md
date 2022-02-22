@@ -133,18 +133,23 @@ conda deactivate
  Next, prepare the reference genome:
  
  ```
+#download reference
+ 
  conda activate Cayo
  
  wget http://ftp.ensembl.org/pub/release-105/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
  
  pigz -d Homo_sapiens.GRCh38.dna.toplevel.fa.gz
  
+ #remove non-chromosomes
+ 
  grep 'REF' Homo_sapiens.GRCh38.dna.toplevel.fa | head -29 > name.lst
  
  seqtk subseq Homo_sapiens.GRCh38.dna.toplevel.fa name.lst > Homo_sapiens.GRCh38.dna.chromosomes.fa
 
  conda deactivate 
- 
+
+#prepare reference
  conda activate xyalign
  
  bash xyalign_index.sh Homo_sapiens.GRCh38.dna.chromosomes.fa
@@ -152,4 +157,22 @@ conda deactivate
  conda deactivate
  
  ```
+ 
+Next, map reads and call SNPS, then run ASEReadCounter, rename output and calculate skewed variants:
+ 
+ ```
+ conda activate Cayo
+ 
+ snakemake --use-conda -np -s Snakefile_GTEx_SNPs.py #dry-run, see 'Snakemake_SNPs.sbatch' for example script for your machine
+ 
+ snakemake --use-conda -np -s Snakefile_GTEx_asereadcounter.py #dry-run, see 'Snakemake_asereadcounter.sbatch' for example script for your machine
+ 
+ bash asereadcounter/ase_reformat.sh
+ 
+ snakemake --use-conda -np -s Snakefile_GTEx_skewed_variants.py #dry-run, see 'Snakemake_skewed_variants.sbatch' for example script for your machine
+ 
+ conda deactivate
+ 
+ ```
+ 
  
