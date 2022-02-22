@@ -115,8 +115,41 @@ conda deactivate
  (Step 8)
  Replicate analysis in humans using GTEx data (controlled access data).
  
+ First, you need to download the read files. If downloading CRAM files for WGS, you'll need to convert to BAM (using GRCh38), strip the reads, and repair the reads before beginning. Simple scripts for this are available in the "fastqs" folder.
+ 
+ Next step is to replicate the Cayo Macaque pipeline for the GTEx data. Starting with trimming reads:
  ```
+ pwd #get current path for next step
+ 
+ sed -i 's/\/scratch\/bpinto2\/Cayo_GTEx/<path-to-working-directory>/g' AGAVE_GTEx_config.json
+ 
+ conda activate Cayo
+ 
+ snakemake --use-conda -np -s Snakefile_GTExTrim.py #dry-run, see 'Snakemake_CayoTrim.sbatch' for example script for your machine
+
+ conda deactivate 
  
  ```
+ Next, prepare the reference genome:
  
+ ```
+ conda activate Cayo
+ 
+ wget http://ftp.ensembl.org/pub/release-105/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
+ 
+ pigz -d Homo_sapiens.GRCh38.dna.toplevel.fa.gz
+ 
+ grep 'REF' Homo_sapiens.GRCh38.dna.toplevel.fa | head -29 > name.lst
+ 
+ seqtk subseq Homo_sapiens.GRCh38.dna.toplevel.fa name.lst > Homo_sapiens.GRCh38.dna.chromosomes.fa
+
+ conda deactivate 
+ 
+ conda activate xyalign
+ 
+ bash xyalign_index.sh Homo_sapiens.GRCh38.dna.chromosomes.fa
+ 
+ conda deactivate
+ 
+ ```
  
