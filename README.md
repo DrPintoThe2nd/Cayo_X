@@ -171,6 +171,10 @@ Next, map reads and call SNPS, then run ASEReadCounter, rename output and calcul
  
  snakemake --use-conda -np -s Snakefile_GTEx_skewed_variants.py #dry-run, see 'Snakemake_skewed_variants.sbatch' for example script for your machine
  
+ cd asereadcounter
+ 
+ Rscript plot_violin_plot_GTEx_all.R
+ 
  conda deactivate
  
  ```
